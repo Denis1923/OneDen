@@ -1,0 +1,38 @@
+﻿body{
+	margin: 0px;
+    font-family: Myriad Pro;
+}
+@font-face {
+    font-family: Myriad Pro;
+    src: url(fonts/MyriadPro-Regular.otf);
+}
+h1{
+	color: white;
+}
+
+.header{
+	border: 1px solid black;
+	background-color: black;
+}
+.foto{
+	border: 1px solid red;
+	background-color: red;
+    width: 10%;
+    display: inline-block;
+    left: 30%;
+}
+
+.foto img{
+ 	width: 100%;
+	border-radius: 50%;
+}
+
+.knowledge{
+	border: 1px solid blue;
+	background-color: blue;
+    display: inline-block;
+    margin-left: 10%;
+}
+.knowledge li{
+	color: white;
+}
