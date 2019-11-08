@@ -70,11 +70,46 @@
 			<dt>td</dt>
 			<dd>расшифровывается как «table data», обозначает ячейку внутри строки таблицы</dd>
 			
+			<dt>th</dt>
+			<dd>расшифровывается как «table header» и обозначает ячейку-заголовок.</dd>
+			
+			<dt>caption</dt>
+			<dd>Распределение браузеров сделана с помощью заголовка первого уровня. В принципе, можно догадаться, что это название таблицы, но семантически правильнее будет сделать это название с помощью тега <strong>caption</strong>.<br>
+				По вертикали заголовок таблицы перемещается CSS-свойством caption-side со значениями top и bottom, которые обозначают до и после таблицы соответственно.
+				<br>
+				По горизонтали заголовок таблицы выравнивается CSS-свойством text-align со значениями left, right и center.</dd>
+		
+			<dt>colspan</dt>
+			<dd>Чтобы объединить ячейки по горизонтали, необходимо использовать атрибут colspan у тегов <strong>th</strong> или <strong>td</strong>.</dd>
+		
+			<dt>rowspan</dt>
+			<dd>Чтобы объединить ячейки по вертикале, необходимо использовать атрибут colspan у тегов <strong>th</strong> или <strong>td</strong>.</dd>
+			
+			<p>CSS-свойство</p>
+			<dt>text-align</dt>
+			<dd>За выравнивание по горизонтали отвечает CSS-свойство text-align. Чаще всего используются значения left, center и right.</dd>
+			
+			<dt>vertical-align</dt>
+			<dd>За выравнивание по вертикали отвечает CSS-свойство vertical-align. Чаще всего используются значения top, middle и bottom.</dd>
+			
 			<dt></dt>
 			<dd></dd>
 			
 			<dt></dt>
 			<dd></dd>
+			
+			<dt></dt>
+			<dd></dd>
+			
+			<dt></dt>
+			<dd></dd>
+			
+			<dt></dt>
+			<dd></dd>
+			
+			<dt></dt>
+			<dd></dd>
+		
 		</dl>
 		
 		<h2>Якоря</h2>
@@ -83,5 +118,32 @@
 		<h2>Пример как можно сделать ссылку</h2>
 		<p> a href="img.jpg"<br> img src="img-small.jpg"</p>
 		
+		<h2>Таблица</h2>
+		<table>
+			  <caption>Распределение браузеров</caption>
+			  <tr>
+				<th class="cell-1" rowspan="2">Браузер</th>
+				<th colspan="2">Посещения</th>
+			  </tr>
+			  <tr>
+				<th>Количество</th>
+				<th>В процентах</th>
+			  </tr>
+			  <tr>
+				<td>Mozilla Firefox</td>
+				<td class="column-2">1263</td>
+				<td class="column-3">75%</td>
+			  </tr>
+			  <tr>
+				<td>Google Chrome</td>
+				<td class="column-2">78</td>
+				<td class="column-3">5%</td>
+			  </tr>
+			  <tr>
+				<td>Safari</td>
+				<td class="column-2">345</td>
+				<td class="column-3">20%</td>
+			  </tr>
+			</table>
 		</body>
 </html>
