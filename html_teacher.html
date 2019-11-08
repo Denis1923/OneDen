@@ -92,11 +92,19 @@
 			<dt>vertical-align</dt>
 			<dd>За выравнивание по вертикали отвечает CSS-свойство vertical-align. Чаще всего используются значения top, middle и bottom.</dd>
 			
-			<dt></dt>
-			<dd></dd>
+			<dt>form</dt>
+			<dd>У тега <strong>form</strong> есть два важных атрибута: action задаёт адрес, URL, отправки формы; method задаёт метод отправки формы:<br>
+				Метод <strong>get</strong> лучше использовать в поисковых формах, потому что он позволяет получить ссылку на результаты поиска и передать её кому-то.
+				<br>
+				Метод <strong>post</strong> посылает данные в теле HTTP-запроса и используется, когда нужно отправить много данных и ссылка на результат обработки этих данных не нужна. Например, при редактировании личного профиля.<br>
+				Если не указать атрибут method, то будет использован get.</dd>
 			
-			<dt></dt>
-			<dd></dd>
+			<dt>textarea</dt>
+			<dd>У него есть атрибуты name и id, которые аналогичны атрибутам текстового поля.
+				<br>
+				Атрибут rows принимает целочисленное значение и задаёт высоту многострочного поля в строках. Атрибут cols задаёт ширину поля в символах. В качестве ширины символа берётся некоторая «усреднённая ширина».
+				<br>
+				Атрибут value у многострочного поля отсутствует, а значение по умолчанию задаётся по-другому. Текст, расположенный между открывающим и закрывающим тегом <textarea> и является значением по умолчанию. Вот так:</dd>
 			
 			<dt></dt>
 			<dd></dd>
@@ -145,5 +153,18 @@
 				<td class="column-3">20%</td>
 			  </tr>
 			</table>
-		</body>
+			
+			<h2>Формы</h2>
+			<form action="https://echo.htmlacademy.ru/courses" method="post">
+				  <label for="login-id">Ваш логин (email):</label><br>
+				  <input  type="text" name="" id="login-id"><br>
+				  <label for="pass-id">Пароль: </label><br>
+				  <input type="password" name="" id="pass-id"><br>
+				  <label for="area-id">Информация о себе:  </label><br>
+				  <textarea rows="3" id="area-id"> </textarea><br>
+				  <input type="checkbox" id="check-id" checked> 
+				  <label for="check-id">Подписаться на рассылку</label><br>
+				  <input type="submit" id="submit" value="Зарегистрироваться">
+				</form>
+				</body>
 </html>
