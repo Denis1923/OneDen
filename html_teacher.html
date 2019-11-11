@@ -10,6 +10,15 @@
 	</head>
 	
 	<body>
+		<h2>Маркированый список</h2>
+		<ul start="2">
+			<li >h1</li>
+			<li>h2</li>
+			<li>h3</li>
+			<li ></li>
+			<li></li>
+			<li></li>
+		</ul>
 		<h2>Пронумерованный список</h2>
 		<ol start="2">
 			<li >h1</li>
@@ -85,7 +94,7 @@
 			<dt>rowspan</dt>
 			<dd>Чтобы объединить ячейки по вертикале, необходимо использовать атрибут colspan у тегов <strong>th</strong> или <strong>td</strong>.</dd>
 			
-			<p>CSS-свойство</p>
+			<h4>CSS-свойство</h4>
 			<dt>text-align</dt>
 			<dd>За выравнивание по горизонтали отвечает CSS-свойство text-align. Чаще всего используются значения left, center и right.</dd>
 			
@@ -104,8 +113,7 @@
 				<br>
 				Атрибут rows принимает целочисленное значение и задаёт высоту многострочного поля в строках. Атрибут cols задаёт ширину поля в символах. В качестве ширины символа берётся некоторая «усреднённая ширина».
 				<br>
-				Атрибут value у многострочного поля отсутствует, а значение по умолчанию задаётся по-другому. Текст, расположенный между открывающим и закрывающим тегом <textarea> и является значением по умолчанию. Вот так:</dd>
-			
+				Атрибут value у многострочного поля отсутствует, а значение по умолчанию задаётся по-другому. Текст, расположенный между открывающим и закрывающим тегом <strong>textarea</strong> и является значением по умолчанию. Вот так:</dd>
 			<dt></dt>
 			<dd></dd>
 			
@@ -123,14 +131,16 @@
 		<h2>Якоря</h2>
 		<p>Ссылка с якорем содержит символ #, после которого идёт идентификатор. Идентификатор создаётся с помощью атрибута id, который может быть задан у любого тега</p>
 		<p>Для того чтобы добавить ссылке всплывающую подсказку, надо использовать атрибут title. Пример <strong>title="подсказка".</strong></p>	
+		
 		<h2>Пример как можно сделать ссылку</h2>
-		<p> a href="img.jpg"<br> img src="img-small.jpg"</p>
+		<pre> a href="img.jpg"
+		img src="img-small.jpg"</pre>
 		
 		<h2>Таблица</h2>
-		<table>
+		<table border="1">
 			  <caption>Распределение браузеров</caption>
 			  <tr>
-				<th class="cell-1" rowspan="2">Браузер</th>
+				<th rowspan="2">Браузер</th>
 				<th colspan="2">Посещения</th>
 			  </tr>
 			  <tr>
@@ -139,18 +149,18 @@
 			  </tr>
 			  <tr>
 				<td>Mozilla Firefox</td>
-				<td class="column-2">1263</td>
-				<td class="column-3">75%</td>
+				<td>1263</td>
+				<td>75%</td>
 			  </tr>
 			  <tr>
 				<td>Google Chrome</td>
-				<td class="column-2">78</td>
-				<td class="column-3">5%</td>
+				<td>78</td>
+				<td>5%</td>
 			  </tr>
 			  <tr>
 				<td>Safari</td>
-				<td class="column-2">345</td>
-				<td class="column-3">20%</td>
+				<td>345</td>
+				<td>20%</td>
 			  </tr>
 			</table>
 			
@@ -161,10 +171,10 @@
 				  <label for="pass-id">Пароль: </label><br>
 				  <input type="password" name="" id="pass-id"><br>
 				  <label for="area-id">Информация о себе:  </label><br>
-				  <textarea rows="3" id="area-id"> </textarea><br>
+				  <textarea rows="3" id="area-id">Подпись </textarea><br>
 				  <input type="checkbox" id="check-id" checked> 
 				  <label for="check-id">Подписаться на рассылку</label><br>
 				  <input type="submit" id="submit" value="Зарегистрироваться">
 				</form>
-				</body>
+</body>
 </html>
