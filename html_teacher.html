@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 </html lang="ru"> <!-- обычно добавляют атрибут lang (language), в котором задаётся язык документа. Наш сайт будет русскоязычным, поэтому lang ="ru" -->
 	<head>
-		<link href="style.css" rel="stylesheet"> <!-- У <link> в атрибуте href задаётся адрес стилевого файла, а атрибут rel со значением stylesheet говорит браузеру, что мы подключаем именно стили, а не что-то другое -->
+		<link href="style_teacher.css" rel="stylesheet"> <!-- У <link> в атрибуте href задаётся адрес стилевого файла, а атрибут rel со значением stylesheet говорит браузеру, что мы подключаем именно стили, а не что-то другое -->
 		<title>Заголовок</title>
 		<meta charset="название кодировки">
 		<meta name="keywords" content="Важные, ключевые, слова">
@@ -10,24 +10,22 @@
 	</head>
 
 	<body>
+		<header>
+				<h1>Шпаргалка</h1>
+		</header>
+		<main>
 	<h2>Списки</h2>
 		<h2>Маркированый список</h2>
 		<ul start="2">
 			<li >h1</li>
 			<li>h2</li>
 			<li>h3</li>
-			<li ></li>
-			<li></li>
-			<li></li>
 		</ul>
 		<h2>Пронумерованный список</h2>
 		<ol start="2">
 			<li >h1</li>
 			<li>h2</li>
 			<li>h3</li>
-			<li ></li>
-			<li></li>
-			<li></li>
 		</ol>
 		<h2>Многоуровневый список</h2>
 		<ul>
@@ -556,5 +554,6 @@
 				  <label for="check-id">Подписаться на рассылку</label><br>
 				  <input type="submit" id="submit" value="Зарегистрироваться">
 				</form>
+			</main>
 </body>
 </html>
