@@ -657,7 +657,7 @@
 				  <label for="pass-id">Пароль: </label><br>
 				  <input type="password" name="" id="pass-id" autofocus placeholder="Текст подсказки"><br>
 				  <label for="area-id">Информация о себе:  </label><br>
-				  <textarea rows="3" id="area-id">Подпись </textarea><br>
+				  <textarea rows="3"  id="area-id">Подпись </textarea><br>
 				  <input type="checkbox" id="check-id" checked>
 				  <label for="check-id">Подписаться на рассылку</label><br>
 					<input type="text" list="browsers" name="browser">
@@ -675,7 +675,24 @@
            <input type="number" name="amount" id="amount" min="5" max="50" step="5"> <!-- При помощи вспомогательных атрибутов min и max можно установить верхнюю и нижнюю границу допустимых значений. А атрибут step устанавливает величину шага изменения значения. -->
 					 <label for="tel">Номер телефона</label>
           <input type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
-
+					<div class="two-third-width">
+            <label for="food">Любимая еда</label>
+            <select id="food" name="food" multiple>
+              <optgroup label="1">
+              <option value="meat">Мясо</option>
+              <option value="fish">Рыба</option>
+              <option value="chi">Курочка</option>
+              <option value="ind">Индейка</option>
+              </optgroup>
+              <optgroup label="2">
+              <option value="mice">Мыши</option>
+              <option value="milk">Молоко</option>
+              <option value="kef">Кефир</option>
+              <option value="water">Вода</option>
+              <option value="smet">Сметана</option>
+              </optgroup>
+            </select>
+          </div>
 					<label for="color">Окрас</label>
             <!-- Поле ввода цвета -->
             <input type="color" name="color">
