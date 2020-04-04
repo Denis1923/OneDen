@@ -650,7 +650,9 @@
 
 			<h2>Формы</h2>
 			<form action="https://echo.htmlacademy.ru/courses" method="post">
-				  <label for="login-id">Ваш логин (email):</label><br>
+					<fieldset>
+						<legend></legend>
+					<label for="login-id">Ваш логин (email):</label><br>
 				  <input  type="text" name="" id="login-id" required><br>
 				  <label for="pass-id">Пароль: </label><br>
 				  <input type="password" name="" id="pass-id" autofocus><br>
@@ -664,9 +666,14 @@
 					  <option value="Chrome"></option>
 					  <option value="Safari"></option>
 					</datalist>
+					<div class="half-width">
+          <label for="dayscount">Количество дней</label>
+          	1 <input type="range" min="1" max="14" step="1"> 14
+          </div>
 					<label for="amount">Количество</label>
            <input type="number" name="amount" id="amount" min="5" max="50" step="5"> <!-- При помощи вспомогательных атрибутов min и max можно установить верхнюю и нижнюю границу допустимых значений. А атрибут step устанавливает величину шага изменения значения. -->
 				  <input type="submit" id="submit" value="Зарегистрироваться">
+				</fieldset>
 				</form>
 			</main>
 </body>
