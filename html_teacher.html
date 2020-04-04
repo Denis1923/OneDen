@@ -673,6 +673,8 @@
 					<input type="text" name="passport" required pattern="[0-9]{3}-[0-9]{5}">
 					<label for="amount">Количество</label>
            <input type="number" name="amount" id="amount" min="5" max="50" step="5"> <!-- При помощи вспомогательных атрибутов min и max можно установить верхнюю и нижнюю границу допустимых значений. А атрибут step устанавливает величину шага изменения значения. -->
+					 <label for="tel">Номер телефона</label>
+          <input type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
 				  <input type="submit" id="submit" value="Зарегистрироваться">
 				</fieldset>
 				</form>
